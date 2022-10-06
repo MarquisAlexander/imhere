@@ -49,12 +49,14 @@ export function Home() {
 			</View>
 			<FlatList
 				data={participants}
-				keyExtractor={item => item}
+				keyExtractor={(item) => item}
 				showsVerticalScrollIndicator={false}
 				ListEmptyComponent={() => (
-					<Text style={styles.listEmptyText}>Ninguém chegou no evento ainda? Adicione participantes na sua lista!</Text>
+					<Text style={styles.listEmptyText}>
+						Ninguém chegou no evento ainda? Adicione participantes na sua lista!
+					</Text>
 				)}
-				renderItem={({item}) => (
+				renderItem={({ item }) => (
 					<Participant
 						name={item}
 						onRemove={() => handleParticipantRemove("marquis")}
