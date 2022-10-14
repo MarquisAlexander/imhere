@@ -46,7 +46,7 @@ export function Home() {
 
 	return (
 		<View style={styles.container}>
-			<Text style={styles.eventName}>Nome do Evento</Text>
+			<Text style={styles.eventName}>Party Programmer Plus💻​</Text>
 			<Text style={styles.eventDate}>Sexta, 4 de Novembro de 2022.</Text>
 
 			<View style={styles.form}>
